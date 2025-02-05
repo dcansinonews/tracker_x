@@ -117,7 +117,7 @@ def main():
         driver = webdriver.Chrome(options=options)
         driver.get(url)
         drivers[name] = driver
-        time.sleep(8)
+        time.sleep(60)
     nombre_archivo = f"analisis_del_live_en_X_{datetime.datetime.now().strftime('%Y-%m-%d')}.xlsx"
     columnas = ["Fecha", "Time"] + stream_names
     print("Monitoreando transmisiones. Presiona Ctrl+C para salir.\n")
